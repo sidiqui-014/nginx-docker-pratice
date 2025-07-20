@@ -1,0 +1,8 @@
+# use offical nginx image 
+FROM nginx
+
+#copy your html file into nginx default web dirctory
+COPY index.html /usr/share/nginx/html/index.html
+
+#expose port 80
+EXPOSE 80 
